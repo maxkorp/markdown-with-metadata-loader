@@ -1,10 +1,14 @@
 {
   "name": "markdown-with-metadata-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Webpack loader for markdown that will parse out yaml metadata in the standard header",
   "main": "index.js",
   "author": "Max Korp (@maximilianokorp)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxkorp/markdown-with-metadata-loader.git"
+  },
   "dependencies": {
     "yaml": "~0.3.0"
   }
