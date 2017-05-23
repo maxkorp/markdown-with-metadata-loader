@@ -1,4 +1,4 @@
-const yaml = require('yaml');
+const yaml = require('js-yaml');
 
 module.exports = (source) => {
   let data;
@@ -10,7 +10,7 @@ module.exports = (source) => {
   } else {
     const split = source.split('---');
     data = {
-      metadata: yaml.eval(split[1]),
+      metadata: yaml.safeLoad(split[1]) || {},
       contents: split[2]
     };
   }
